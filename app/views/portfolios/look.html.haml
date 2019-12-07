@@ -1,0 +1,44 @@
+%header{role: "banner"}
+  %button.drawer-toggle.drawer-hamburger{type: "button"}
+    %span.sr-only toggle navigation
+    %span.drawer-hamburger-icon
+    .btn-social-square.btn-social-square--twitter
+      %a{ href: "https://twitter.com/home"}
+        %i.fab.fa-twitter{ id: "icon1"}
+    .btn-social-square
+      %a{ href: "https://qiita.com/daiki_1104"}
+        %i.fab.fa-quora{ id: "icon1"}
+  %nav.drawer-nav{ role: "navigation"}
+    %ul.drawer-menu
+      %li.drawer-title
+        Contact
+      %li
+        %a.drawer-menu-item{ href:"mailto:daught.1994@icloud.com?subject=件名&amp;body=本文"} Mail
+      %li
+        %a.drawer-menu-item{ href:"tel:09054739700"} Tel
+      %li
+        %a.drawer-menu-item{href: "https://github.com/daiki-naka"} GitHub
+%section.my-look 
+  %span.my-look__title About look
+  %p.my-look__subtitle ※ ローカルファイルの為、概要を説明致します。
+  .my-look__gif
+    = image_tag '画面収録 2019-12-06 15.48.21.mov.gif', height: '250px', width: '370px', class: 'my-look__gif--content'
+  .my-look__picture
+    = image_tag 'スクリーンショット 2019-12-06 17.24.30.png', height: '250px', width: '370px', class: 'my-look__picture--content'
+    = image_tag 'スクリーンショット 2019-12-06 17.25.00.png', height: '250px', width: '370px', class: 'my-look__picture--content'
+  %ul.my-look__list
+    %li 
+      %h2.my-look__list--content - 旅行予約サイトに飛びたくなるようなWebページの作成
+    %li 
+      %h2.my-look__list--content - cssやjsを活用して、メニューやボタンに動きをつける
+    %li 
+      %h2.my-look__list--content - 画像の選択、配置などページの雰囲気を意識して構築
+    %li 
+      %h2.my-look__list--content - PR動画を埋め込むことによって、多角的に魅力を伝える
+    %li 
+      %h2.my-look__list--content - SNS、企業リンクをつけて窓口としての機能をいれる
+    %li
+      = link_to "Back", :back , class: 'btn-cross btn__look', data: {"turbolinks" => false}
+      -# %a.btn-cross.btn__look{ href: "file:///Users/nakamuradaiki/look/index.html"} Back
+
+

@@ -1,0 +1,81 @@
+%section.cities__header
+  = render 'layouts/header' 
+  %h1.cities__header--title MY PORTFOLIO
+%section.my-picture
+  %div
+    = image_tag 'IMG_2486.jpg',height: '600px', width: '90%'
+  %div
+    = image_tag 'IMG_2499.jpg', height: '600px', width: '90%'
+  %div
+    = image_tag 'IMG_2481.jpg', height: '600px', width: '90%'
+  %div
+    = image_tag 'IMG_2035.jpg', height: '600px', width: '90%'
+%section.my-profile#profile
+  %h2.my-profile__title Profile
+  .my-profile__main
+    %p 仲村 大貴
+    %p 1994年 大分県出身
+    %p 2017年 関西大学経済学部卒
+    %p 2017年4月 食品メーカーに入社、人事総務部への配属になり新卒・中途採用活動を経験する。
+    %p 2018年10月 退職後、皮革製品メーカーの販売員として鎌倉で働き始める。ブランドのWeb編集者と出会い、Web関連に興味を持ち始める。
+    %p 2019年8月 人生の転機を迎える。IT業界で働く友人と再会し、ITエンジニアを目指すと決意をする。
+    %p 2019年9月 TECH::EXPERT短期集中コースをきっかけにプログラミング学習を始める。
+    %p.my-profile__main--item 学習言語
+    %p HTML,CSS,Ruby,Rails,JavaScript,jQuery,Node.js,fullPage.js,Git,GitHub,Haml,SCSS,AWS
+    %p.my-profile__main--item 趣味
+    %p 映画鑑賞、音楽関連（音楽鑑賞、フェス、カホン演奏 etc..)、美術館散策、居酒屋巡り
+%section.my-works#works
+  %h2.my-purpose__list--content--title.my-works__title MY WORKS
+  .my-works__wrapper
+    .my-works__wrapper--work-box
+      = image_tag 'https://i.gyazo.com/9b5e433f29b4ceb3187bbcdb60d74c9a.png', class: 'my-works__wrapper--work-image'
+      .my-works__wrapper--work-description
+        chatspace
+        %br/
+        %a.btn-cross{ href: "http://18.177.24.134"} look more
+    .my-works__wrapper--work-box
+      = image_tag 'https://i.gyazo.com/bceb48de46e0b97de09695f5a227c293.jpg', class: 'my-works__wrapper--work-image'
+      .my-works__wrapper--work-description
+        mercari
+        %br/
+        %a.btn-cross{ href: "http://54.168.98.247"} look more
+      .my-works__wrapper--work-description--text
+        %p ※ メルカリのクローンサイトを作成しました。
+        %p Basic認証をかけておりますので、
+        %p 閲覧をして頂ける際はご連絡頂けると幸いです。
+        %p ご連絡は右上メニューバーの中より承っております。
+    .my-works__wrapper--work-box
+      = image_tag 'スクリーンショット 2019-12-04 19.36.48.png', class: 'my-works__wrapper--work-image'
+      .my-works__wrapper--work-description
+        look
+        %br/
+        = link_to "look more", look_portfolios_path, class: "btn-cross", data: {"turbolinks" => false}
+%section.my-purpose#purpose
+  %h1.my-purpose__title My purpose
+  %ul.my-purpose__list 
+    %li.my-purpose__list--content
+      = image_tag 'プログラムアイコン.png', height: '110px', width: '110px'
+      %h2.my-purpose__list--content--title コーディング
+      .my-purpose__list--content--text
+        %p 読み手を意識したコードを書いていきます。
+        %p また、可読性、メンテナンス性を意識したコーディングを心がけていきます。
+    %li.my-purpose__list--content
+      = image_tag 'WEBページのアイコン.png', height: '100px', width: '100px'
+      %h2.my-purpose__list--content--title webデザイン
+      .my-purpose__list--content--text
+        %p 様々なジャンルのwebデザインに対応していきます。アニメーションやjsを活用して動きのある構築を目指します。
+    %li.my-purpose__list--content
+      = image_tag 'データベースアイコン1.png', height: '100px', width: '100px'
+      %h2.my-purpose__list--content--title インフラ関連
+      .my-purpose__list--content--text
+        %p AWS等のクラウドサーバーの知識を増やします。デプロイを経験し、本番環境構築の大切さを実感しているからです。
+    %li.my-purpose__list--content
+      = image_tag 'デスクワークのフリー素材5.png', height: '100px', width: '100px'
+      %h2.my-purpose__list--content--title プログラミング学習
+      .my-purpose__list--content--text
+        %p 継続的な学習をおこなっていきます。フロント関連の言語を主に、サーバー、インフラ関連にもアンテナを張っていきます。
+
+
+
+
+

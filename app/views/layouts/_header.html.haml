@@ -1,0 +1,28 @@
+%header{role: "banner"}
+  %button.drawer-toggle.drawer-hamburger{type: "button"}
+    %span.sr-only toggle navigation
+    %span.drawer-hamburger-icon
+    .btn-social-square.btn-social-square--twitter
+      %a{ href: "https://twitter.com/home"}
+        %i.fab.fa-twitter{ id: "icon1"}
+    .btn-social-square
+      %a{ href: "https://qiita.com/daiki_1104"}
+        %i.fab.fa-quora{ id: "icon1"}
+  %nav.drawer-nav{ role: "navigation"}
+    %ul.drawer-menu
+      %li.drawer-title
+        Page
+      %li
+        = link_to "Profile", { anchor: "profile"} , data: {"turbolinks" => false}, class: 'drawer-menu-item'
+      %li
+        = link_to "My works", { anchor: "works"} , data: {"turbolinks" => false}, class: 'drawer-menu-item'
+      %li
+        = link_to "My purpose", { anchor: "purpose"} , data: {"turbolinks" => false}, class: 'drawer-menu-item'
+      %li.drawer-title
+        Contact
+      %li
+        %a.drawer-menu-item{ href:"mailto:daught.1994@icloud.com?subject=件名&amp;body=本文"} Mail
+      %li
+        %a.drawer-menu-item{ href:"tel:09054739700"} Tel
+      %li
+        %a.drawer-menu-item{href: "https://github.com/daiki-naka"} GitHub
