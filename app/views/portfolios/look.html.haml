@@ -3,21 +3,21 @@
     %span.sr-only toggle navigation
     %span.drawer-hamburger-icon
     .btn-social-square.btn-social-square--twitter
-      %a{ href: "https://twitter.com/home"}
+      %a{ href: "https://twitter.com/home", target: 'blank'}
         %i.fab.fa-twitter{ id: "icon1"}
     .btn-social-square
-      %a{ href: "https://qiita.com/daiki_1104"}
+      %a{ href: "https://qiita.com/daiki_1104", target: 'blank'}
         %i.fab.fa-quora{ id: "icon1"}
   %nav.drawer-nav{ role: "navigation"}
     %ul.drawer-menu
       %li.drawer-title
         Contact
       %li
-        %a.drawer-menu-item{ href:"mailto:daught.1994@icloud.com?subject=件名&amp;body=本文"} Mail
+        %a.drawer-menu-item{ href:"mailto:daught.1994@icloud.com?subject=件名&amp;body=本文", target: 'blank'} Mail
       %li
-        %a.drawer-menu-item{ href:"tel:09054739700"} Tel
+        %a.drawer-menu-item{ href:"tel:09054739700", target: 'blank'} Tel
       %li
-        %a.drawer-menu-item{href: "https://github.com/daiki-naka"} GitHub
+        %a.drawer-menu-item{href: "https://github.com/daiki-naka", target: 'blank'} GitHub
 %section.my-look 
   %span.my-look__title About look
   %p.my-look__subtitle ※ ローカルファイルの為、概要を説明致します。
@@ -39,6 +39,5 @@
       %h2.my-look__list--content - SNS、企業リンクをつけて窓口としての機能をいれる
     %li
       = link_to "Back", :back , class: 'btn-cross btn__look', data: {"turbolinks" => false}
-      -# %a.btn-cross.btn__look{ href: "file:///Users/nakamuradaiki/look/index.html"} Back
 
 

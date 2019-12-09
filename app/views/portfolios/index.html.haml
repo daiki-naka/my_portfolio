@@ -3,13 +3,13 @@
   %h1.cities__header--title MY PORTFOLIO
 %section.my-picture
   %div
-    = image_tag 'IMG_2486.jpg',height: '600px', width: '90%'
+    = image_tag 'IMG_2486.jpg',height: '600px', width: '90%', class: 'my-picture__content'
   %div
-    = image_tag 'IMG_2499.jpg', height: '600px', width: '90%'
+    = image_tag 'IMG_2499.jpg', height: '600px', width: '90%', class: 'my-picture__content'
   %div
-    = image_tag 'IMG_2481.jpg', height: '600px', width: '90%'
+    = image_tag 'IMG_2481.jpg', height: '600px', width: '90%', class: 'my-picture__content'
   %div
-    = image_tag 'IMG_2035.jpg', height: '600px', width: '90%'
+    = image_tag 'IMG_2035.jpg', height: '600px', width: '90%', class: 'my-picture__content'
 %section.my-profile#profile
   %h2.my-profile__title Profile
   .my-profile__main
@@ -32,13 +32,13 @@
       .my-works__wrapper--work-description
         chatspace
         %br/
-        %a.btn-cross{ href: "http://18.177.24.134"} look more
+        %a.btn-cross{ href: "http://18.177.24.134", target: 'blank'} look more
     .my-works__wrapper--work-box
       = image_tag 'https://i.gyazo.com/bceb48de46e0b97de09695f5a227c293.jpg', class: 'my-works__wrapper--work-image'
       .my-works__wrapper--work-description
         mercari
         %br/
-        %a.btn-cross{ href: "http://54.168.98.247"} look more
+        %a.btn-cross{ href: "http://54.168.98.247", target: 'blank'} look more
       .my-works__wrapper--work-description--text
         %p ※ メルカリのクローンサイトを作成しました。
         %p Basic認証をかけておりますので、

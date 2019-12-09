@@ -64,6 +64,9 @@
   margin-top:60px;
   margin-left:80px;
   float: left;
+  &__content{
+    object-fit: cover;
+  }
 }
 
 .my-profile{
